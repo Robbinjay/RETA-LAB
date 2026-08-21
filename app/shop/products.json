@@ -1,0 +1,892 @@
+[
+  {
+    "id": 1,
+    "title": "KPV 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/kpv-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/KPV.png",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 2,
+    "title": "MOTS-C 40mg",
+    "price": "\u00a350.00",
+    "url": "https://orionpeptide.com/product/mots-c-40mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/MOTS-C-40mg.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 50.0
+  },
+  {
+    "id": 3,
+    "title": "Glutathione 1500mg",
+    "price": "\u00a395.00",
+    "url": "https://orionpeptide.com/product/glutathione-1500mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Glutathione-1500mg.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 95.0
+  },
+  {
+    "id": 4,
+    "title": "Acetic Acid 10ml",
+    "price": "\u00a315.00",
+    "url": "https://orionpeptide.com/product/acetic-acid-10ml/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Acetic-Acid-10ml.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 15.0
+  },
+  {
+    "id": 5,
+    "title": "GHRP-6 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/ghrp-6-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/GHRP-6.png",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 6,
+    "title": "Tesamorelin + Ipamorelin - 10MG (Blend)",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/tesamorelin-ipamorelin-10mg-blend/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Tesamorelin-Ipamorelin-10MG.png",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 7,
+    "title": "Sermorelin/GHRH (1-29) \u2013 10 mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/sermorelin-ghrh-1-29-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Sermorelin_GHRH-1-29-%E2%80%93-10-mg.png",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 8,
+    "title": "Bacteriostatic Water (BAC Water) 30 Ml",
+    "price": "\u00a315.00",
+    "url": "https://orionpeptide.com/product/bacteriostatic-water-30ml/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Bacteriostatic-Water-30ML.png",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 15.0
+  },
+  {
+    "id": 9,
+    "title": "Semaglutide (GLP-1) 30 mg",
+    "price": "\u00a378.00",
+    "url": "https://orionpeptide.com/product/semaglutide-glp-1-30mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Semaglutide-GLP-1-30mg.png",
+    "category": "Semaglutide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 78.0
+  },
+  {
+    "id": 10,
+    "title": "Tirzepatide 40mg",
+    "price": "\u00a3115.00",
+    "url": "https://orionpeptide.com/product/tirzepatide-40mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Tirzepatide-40mg.webp",
+    "category": "Tirzepatide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 115.0
+  },
+  {
+    "id": 11,
+    "title": "Thymosin Alpha-1 - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/thymosin-alpha-1-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Thymosin-Alpha-1-10-mg.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 12,
+    "title": "DSIP - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/dsip-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/ced49832-bfc6-48e9-b755-cc7fb0af9044.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 13,
+    "title": "BPC-157 (10 mg) + TB-500 (20 mg) Blend",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/bpc-157-10-mg-tb-500-20-mg-blend/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Blend-BPC-157-10mgTB-500-10mg-20mg-Peptide-orion.webp",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 14,
+    "title": "Bacteriostatic Water 3ml",
+    "price": "\u00a315.00",
+    "url": "https://orionpeptide.com/product/bacteriostatic-water-3ml/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Bacteriostatic-Water-3ml-Peptide-orion.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 15.0
+  },
+  {
+    "id": 15,
+    "title": "Glow Blend (BPC-157 + TB-500 + GHK-Cu)",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/glow-blend-bpc-157-tb-500-ghk-cu/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Gemini_Generated_Image_n8xh8tn8xh8tn8xh.png",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 16,
+    "title": "NAD+ - 600mg",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/nad-600mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/NAD-600mg-1.webp",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 17,
+    "title": "Retatrutide - 5mg",
+    "price": "\u00a365.00",
+    "url": "https://orionpeptide.com/product/retatrutide-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Retatrutide-5mg-Peptide-orion.webp",
+    "category": "Retatrutide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 65.0
+  },
+  {
+    "id": 18,
+    "title": "Tesamorelin - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/tesamorelin-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Tesamorelin-5mg-Peptide-orion.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 19,
+    "title": "CJC-1295 No DAC (10mg) + Ipamorelin (10mg) Blend",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/cjc-1295-no-dac-ipamorelin-20mg-blend/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/CJC-1295-No-DAC-Ipamorelin-Blend-20mg.webp",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 20,
+    "title": "Ipamorelin - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/ipamorelin-10-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/01/Ipamorelin-5mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 21,
+    "title": "Retatrutide - 30mg",
+    "price": "\u00a3120.00",
+    "url": "https://orionpeptide.com/product/retatrutide-30mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Retatrutide-30mg-Peptide-orion-2.png",
+    "category": "Retatrutide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 120.0
+  },
+  {
+    "id": 22,
+    "title": "AOD-9604 (10mg) + Tesamorelin (10mg) Research Kit",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/aod-9604-tesamorelin-10mg-research-kit/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/AOD-9604-10mg-Tesamorelin-10mg.webp",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 23,
+    "title": "CJC-1295 (No DAC) (5mg) + Ipamorelin (5mg) Research Bundle",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/cjc-1295-ipamorelin-5mg-research-bundle/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/033-1.webp",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 24,
+    "title": "Thymosin Alpha-1 - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/thymosin-alpha-1/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Thymosin-Alpha-1.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 25,
+    "title": "Kisspeptin-10 - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/kisspeptin-10-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/KissPeptin-10-5mg.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 26,
+    "title": "DSIP - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/dsip-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/DSIP-5MG.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 27,
+    "title": "Oxytocin - 2mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/oxytocin-2mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Oxytocin-2mg.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 28,
+    "title": "Melanotan I (MT1) - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/melanotan-i-mt1-5-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Melanotan-1-5mg-Peptide-orion.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 29,
+    "title": "Tirzepatide (GLP-1/GIP) - 30mg",
+    "price": "\u00a388.00",
+    "url": "https://orionpeptide.com/product/tirzepatide-glp-2-30-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Tirzepatide_30MG-2.png",
+    "category": "Tirzepatide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 88.0
+  },
+  {
+    "id": 30,
+    "title": "GHK-Cu - 100mg",
+    "price": "\u00a395.00",
+    "url": "https://orionpeptide.com/product/ghk-cu-100-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/GHK-CU_100mg.png",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 95.0
+  },
+  {
+    "id": 31,
+    "title": "Semaglutide (GLP-1) - 20mg",
+    "price": "\u00a352.00",
+    "url": "https://orionpeptide.com/product/semaglutide-20-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Semaglutide_20_mg.webp",
+    "category": "Semaglutide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 52.0
+  },
+  {
+    "id": 32,
+    "title": "Tirzepatide (GLP-1/GIP) - 20mg",
+    "price": "\u00a358.00",
+    "url": "https://orionpeptide.com/product/tirzepatide-glp-2-20-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Tirzepatide_20MG-2.png",
+    "category": "Tirzepatide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 58.0
+  },
+  {
+    "id": 33,
+    "title": "L-Carnitine - 600mg",
+    "price": "\u00a395.00",
+    "url": "https://orionpeptide.com/product/l-carnitine-600mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/03/L-Carnitine-600mg.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 95.0
+  },
+  {
+    "id": 34,
+    "title": "VIP (Vasoactive Intestinal Peptide) - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/vip-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/03/VIP-5mg.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 35,
+    "title": "Semax - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/semax-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/03/Semax-10mg.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 36,
+    "title": "Semax - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/semax-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/03/Semax-5mg-1024x978.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 37,
+    "title": "Selank - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/selank-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/03/Selank-10mg-1024x978.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 38,
+    "title": "Selank - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/selank-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/03/SELANK-5MG-1024x978.webp",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 39,
+    "title": "NAD+ - 100mg",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/nad-100mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/03/NAD-100mg-1024x978.webp",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 40,
+    "title": "BPC 157 (10mg) + TB 500 (10mg) Blend",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/bpc-157-10mg-tb-500-10mg-blend/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Blend-BPC-157-10mgTB-500-10mg-20mg-Peptide-orion.webp",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 41,
+    "title": "Retatrutide - 20mg",
+    "price": "\u00a370.00",
+    "url": "https://orionpeptide.com/product/retatrutide-20mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/03/Buy-Retatrutide-20mg-.webp",
+    "category": "Retatrutide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 70.0
+  },
+  {
+    "id": 42,
+    "title": "Retatrutide - 15mg",
+    "price": "\u00a365.00",
+    "url": "https://orionpeptide.com/product/retatrutide-15mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Retatrutide-15mg-Peptide-orion-2.jpg",
+    "category": "Retatrutide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 65.0
+  },
+  {
+    "id": 43,
+    "title": "CJC-1295 NO DAC (5mg) + Ipamorelin (5mg) Blend",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/blend-cjc-1295-no-dac-5mg-ipamorelin-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/WhatsApp-Image-2026-02-18-at-2.05.27-PM.jpeg",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 44,
+    "title": "Bacteriostatic Water 10ml",
+    "price": "\u00a315.00",
+    "url": "https://orionpeptide.com/product/bacteriostatic-water-10ml/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Bacteriostatic-Water-10ml-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 15.0
+  },
+  {
+    "id": 45,
+    "title": "Klow Blend - BPC 157 (10mg) + TB 500 (10mg) + GHK-Cu (50mg) + KPV (10mg) Blend",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/klow-blend-bpc-157-10mg-tb-500-10mg-ghk-cu-50mg-kpv-10mg-blend/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/klow.webp",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 46,
+    "title": "NAD+ - 500mg",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/nad/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Vaccine_Bottle_v01_copy.jpg",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 47,
+    "title": "GHK-Cu - 50mg",
+    "price": "\u00a375.00",
+    "url": "https://orionpeptide.com/product/ghk-cu-50-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/GHK-Cu-50mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 75.0
+  },
+  {
+    "id": 48,
+    "title": "GHK-Cu - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/ghk-cu-10-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/GHK-Cu-10mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 49,
+    "title": "PT-141 - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/pt-141-10-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/PT-141-10mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 50,
+    "title": "\u2060PT-141 - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/pt-141-5-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/PT-141-5mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 51,
+    "title": "AOD-9604 - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/aod-9604-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/AOD-9604-10mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 52,
+    "title": "AOD-9604 - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/aod-9604-5-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/AOD-9604-5mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 53,
+    "title": "AOD-9604 - 2mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/aod-9604-2-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/AOD-9604-2mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 54,
+    "title": "Ipamorelin - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/ipamorelin-5-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Ipamorelin-5mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 55,
+    "title": "Ipamorelin - 2mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/ipamorelin-2-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Ipamorelin-2mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 56,
+    "title": "CJC-1295 (No DAC) - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/cjc-1295-no-dac-5-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/CJC-1295-No-DAC-5mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 57,
+    "title": "CJC-1295 (No DAC) - 2mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/cjc-1295-no-dac-2-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Gemini_Generated_Image_n09814n09814n098.png",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 58,
+    "title": "TB-500 - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/tb-500-10-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/TB-500-10mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 59,
+    "title": "BPC-157 - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/bpc-157-10-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/BPC-157-10mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 60,
+    "title": "BPC-157 - 5mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/bpc-157-5-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/BPC-157-5mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 61,
+    "title": "Tirzepatide (GLP-1/GIP) - 15mg",
+    "price": "\u00a355.00",
+    "url": "https://orionpeptide.com/product/tirzepatide-15-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/01/Tirzepatide-15mg.webp",
+    "category": "Tirzepatide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 55.0
+  },
+  {
+    "id": 62,
+    "title": "Tirzepatide (GLP-1/GIP) - 10mg",
+    "price": "\u00a338.00",
+    "url": "https://orionpeptide.com/product/tirzepatide-10-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/01/Tirzepatide-10mg.webp",
+    "category": "Tirzepatide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 38.0
+  },
+  {
+    "id": 63,
+    "title": "Tirzepatide (GLP-1/GIP) - 5mg",
+    "price": "\u00a355.00",
+    "url": "https://orionpeptide.com/product/tirzepatide-5-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/01/Tirzepatide-5mg.webp",
+    "category": "Tirzepatide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 55.0
+  },
+  {
+    "id": 64,
+    "title": "Semaglutide (GLP-1)- 15mg",
+    "price": "\u00a352.00",
+    "url": "https://orionpeptide.com/product/semaglutide-15-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/sema.webp",
+    "category": "Semaglutide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 52.0
+  },
+  {
+    "id": 65,
+    "title": "Semaglutide (GLP-1) - 10mg",
+    "price": "\u00a338.00",
+    "url": "https://orionpeptide.com/product/semaglutide-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Semaglutide-10mg-Peptide-orion-1.jpg",
+    "category": "Semaglutide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 38.0
+  },
+  {
+    "id": 66,
+    "title": "BPC 157 (5mg) +TB 500 (5mg) Blend",
+    "price": "\u00a368.00",
+    "url": "https://orionpeptide.com/product/blend-bpc-157-5mgtb-500-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Blend-BPC-157-5mgTB-500-5mg-10mg-Peptide-orion.jpg",
+    "category": "Blends",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 68.0
+  },
+  {
+    "id": 67,
+    "title": "Epithalon (Epitalon) - 20mg",
+    "price": "\u00a350.00",
+    "url": "https://orionpeptide.com/product/epithalon-epitalon-20mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Epithalon-Epitalon-20mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 50.0
+  },
+  {
+    "id": 68,
+    "title": "Epithalon (Epitalon) - 10mg",
+    "price": "\u00a350.00",
+    "url": "https://orionpeptide.com/product/epithalon-epitalon-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Epithalon-Epitalon-10mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 50.0
+  },
+  {
+    "id": 69,
+    "title": "Sermorelin/ GHRH (1-29) - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/sermorelin-ghrh-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/01/Sermorelin-GHRH-5mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 70,
+    "title": "Sermorelin/GHRH (1-29) - 2mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/sermorelin-ghrh-2mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/01/Sermorelin-GHRH-2mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 71,
+    "title": "IGF-1 LR3 - 1mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/igf-1-lr3-1mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/IGF-1-LR3-1mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 72,
+    "title": "Glutathione (10ML) - 500mg",
+    "price": "\u00a395.00",
+    "url": "https://orionpeptide.com/product/glutathione-10ml-500mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Glutathione-10ml-500mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 95.0
+  },
+  {
+    "id": 73,
+    "title": "Glutathione (10ML) - 600mg",
+    "price": "\u00a395.00",
+    "url": "https://orionpeptide.com/product/glutathione-10ml-600mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Glutathione-10ml-600mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 95.0
+  },
+  {
+    "id": 74,
+    "title": "SS-31/Elamipretide - 5mg",
+    "price": "\u00a332.00",
+    "url": "https://orionpeptide.com/product/ss-31-elamipretide/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Elamipretide-5mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 32.0
+  },
+  {
+    "id": 75,
+    "title": "Retatrutide - 10mg",
+    "price": "\u00a345.00",
+    "url": "https://orionpeptide.com/product/retatrutide-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Retatrutide-10mg-Peptide-orion-1.jpg",
+    "category": "Retatrutide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 45.0
+  },
+  {
+    "id": 76,
+    "title": "MOTS-c - 10mg",
+    "price": "\u00a350.00",
+    "url": "https://orionpeptide.com/product/mots-c-10-mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/MOTS-C-Human-10mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 50.0
+  },
+  {
+    "id": 77,
+    "title": "Tesamorelin - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/tesamorelin-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/01/Tesamorelin-10mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 78,
+    "title": "5 Amino 1MQ - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/5-amino-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/01/5-Amino-1MQ-10mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 79,
+    "title": "Melanotan II (MT2) - 10mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/melanotan-ii-10mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/01/Melanotan-II-10mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 80,
+    "title": "TB-500 - 5mg",
+    "price": "\u00a342.00",
+    "url": "https://orionpeptide.com/product/tb-500/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/01/TB-500-5mg-Peptide-orion.jpg",
+    "category": "Other Peptides",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 42.0
+  },
+  {
+    "id": 81,
+    "title": "Semaglutide (GLP-1) - 5mg",
+    "price": "\u00a328.00",
+    "url": "https://orionpeptide.com/product/semaglutide-5mg/",
+    "image": "https://orionpeptide.com/wp-content/uploads/2026/08/Semaglutide-5mg-Peptide-orion.webp",
+    "category": "Semaglutide",
+    "description": "High-purity research peptide. Third-party tested >99% purity.",
+    "priceNumber": 28.0
+  },
+  {
+    "title": "Retatrutide 40mg (R&D Only)",
+    "price": "\u00a3160.00 GBP",
+    "url": "https://alluvi.bz/shop",
+    "image": "https://alluvi.bz/images/retafourty/retafrontnew.jpg",
+    "category": "Alluvi",
+    "description": "A 40mg Retatrutide formulation supplied in a pre-filled research device.",
+    "priceNumber": 160.0,
+    "id": 82
+  },
+  {
+    "title": "Retatrutide 20mg (R&D Only)",
+    "price": "\u00a3100.00 GBP",
+    "url": "https://alluvi.bz/shop",
+    "image": "https://alluvi.bz/images/retatwenty/retafront.jpeg",
+    "category": "Alluvi",
+    "description": "A 20mg Retatrutide formulation supplied in a pre-filled research device.",
+    "priceNumber": 100.0,
+    "id": 83
+  },
+  {
+    "title": "BPC-157 & TB-500 40mg (R&D Only)",
+    "price": "\u00a3130.00 GBP",
+    "url": "https://alluvi.bz/shop",
+    "image": "https://alluvi.bz/images/bpc/bpcfrontnew.jpg",
+    "category": "Alluvi",
+    "description": "A 40mg BPC-157 & TB-500 formulation supplied in a pre-filled research device.",
+    "priceNumber": 130.0,
+    "id": 84
+  },
+  {
+    "title": "Glow 70mg (BPC-157 + TB-500 + GHK-Cu) (R&D Only)",
+    "price": "\u00a3100.00 GBP",
+    "url": "https://alluvi.bz/shop",
+    "image": "https://alluvi.bz/images/glow/glowfrontnew.jpg",
+    "category": "Alluvi",
+    "description": "A 70mg Glow formulation supplied in a pre-filled research device.",
+    "priceNumber": 100.0,
+    "id": 85
+  },
+  {
+    "title": "Tirzepatide 40mg (R&D Only)",
+    "price": "\u00a3100.00 GBP",
+    "url": "https://alluvi.bz/shop",
+    "image": "https://alluvi.bz/images/tirzepetide/Artboard2.jpg",
+    "category": "Alluvi",
+    "description": "A 40mg Tirzepatide formulation supplied in a pre-filled research device.",
+    "priceNumber": 100.0,
+    "id": 86
+  },
+  {
+    "title": "NAD+ 1,000mg",
+    "price": "\u00a3140.00 GBP",
+    "url": "https://alluvi.bz/shop",
+    "image": "https://alluvi.bz/images/nad/nadfront.jpg",
+    "category": "Alluvi",
+    "description": "NAD+ 1,000mg research formulation.",
+    "priceNumber": 140.0,
+    "id": 87
+  },
+  {
+    "title": "Retatrutide 40mg (Bundle x 2)",
+    "price": "\u00a3300.00 GBP",
+    "url": "https://alluvi.bz/shop",
+    "image": "https://alluvi.bz/images/bundledretabundledwatermark.png",
+    "category": "Alluvi",
+    "description": "A 40mg Retatrutide formulation bundle x2.",
+    "priceNumber": 300.0,
+    "id": 88
+  },
+  {
+    "title": "Retatrutide 20mg (Bundle x 2)",
+    "price": "\u00a3190.00 GBP",
+    "url": "https://alluvi.bz/shop",
+    "image": "https://alluvi.bz/images/bundledreta20.png",
+    "category": "Alluvi",
+    "description": "A 20mg Retatrutide formulation bundle x2.",
+    "priceNumber": 190.0,
+    "id": 89
+  }
+]
