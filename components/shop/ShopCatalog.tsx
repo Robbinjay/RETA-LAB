@@ -47,6 +47,7 @@ export function ShopCatalog({ products }: ShopCatalogProps) {
     e.stopPropagation();
     addItem(product, 1);
     setAddedId(product.id);
+    openCart();
     setTimeout(() => {
       setAddedId(null);
     }, 1500);
@@ -261,15 +262,16 @@ export function ShopCatalog({ products }: ShopCatalogProps) {
                       )}
                     </button>
 
-                    <a
-                      href={product.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full py-1.5 px-3 rounded-lg text-slate-500 hover:text-slate-800 hover:bg-slate-100 text-[11px] font-semibold text-center flex items-center justify-center gap-1 transition-colors"
+                    <Link
+                      href="/checkout"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        addItem(product, 1);
+                      }}
+                      className="w-full py-1.5 px-3 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 text-[11px] font-semibold text-center flex items-center justify-center gap-1 transition-colors"
                     >
-                      <span>Third-Party CoA Reference</span>
-                      <ExternalLink className="w-3 h-3 text-slate-400" />
-                    </a>
+                      <span>Direct Checkout →</span>
+                    </Link>
                   </div>
                 </div>
               </div>

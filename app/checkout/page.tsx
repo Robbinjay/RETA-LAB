@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useCart, SHIPPING_OPTIONS, ShippingOption } from '@/lib/cart-context';
+import { AiCheckoutAssistant } from '@/components/shop/AiCheckoutAssistant';
 import {
   ShieldCheck,
   Truck,
@@ -869,6 +870,18 @@ export default function CheckoutPage() {
                 </div>
 
               </div>
+
+              {/* AI Checkout & Laboratory Assistant */}
+              <AiCheckoutAssistant
+                embedded
+                orderContext={{
+                  subtotal,
+                  shippingTier: selectedShipping.name,
+                  shippingFee,
+                  paymentMethod,
+                  itemCount: items.length,
+                }}
+              />
 
             </div>
 

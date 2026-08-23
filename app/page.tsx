@@ -1,10 +1,10 @@
 import { Hero } from '@/components/ui/Hero';
 import { UkResearchGuide } from '@/components/ui/UkResearchGuide';
+import { FeaturedProducts } from '@/components/shop/FeaturedProducts';
 import Link from 'next/link';
-import { ArrowRight, BookOpen, ShieldCheck, Microscope, ShoppingCart } from 'lucide-react';
+import { ArrowRight, BookOpen, ShieldCheck, Microscope } from 'lucide-react';
 import type { Metadata } from 'next';
 import productsData from '@/app/shop/products.json';
-import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Retatrutide UK | Buy Retatrutide UK, Clinical Trials & Research Guide',
@@ -138,82 +138,22 @@ export default function Home() {
       </section>
 
       {/* Featured Products */}
-      <section className="py-24 bg-white border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-            <div className="max-w-2xl">
-              <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 uppercase">
-                Featured <span className="text-primary-600">Peptides</span>
-              </h2>
-              <p className="mt-4 text-lg font-medium text-slate-600">
-                Explore our selection of top-tier synthetic peptides available for laboratory research.
-              </p>
-            </div>
-            <Link href="/shop" className="inline-flex items-center justify-center bg-slate-900 hover:bg-primary-600 text-white font-bold py-3 px-6 rounded-lg transition-colors uppercase tracking-wide text-sm whitespace-nowrap">
-              Shop All Products <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {productsData
-              .filter((p) =>
-                [
-                  'Retatrutide - 5mg',
-                  'Retatrutide - 10mg',
-                  'Tirzepatide (GLP-1/GIP) - 10mg',
-                  'Semaglutide (GLP-1) - 5mg',
-                  'Retatrutide - 30mg',
-                  'Tirzepatide (GLP-1/GIP) - 15mg',
-                  'Tesamorelin + Ipamorelin - 10MG (Blend)',
-                  'MOTS-C 40mg',
-                ].includes(p.title)
-              )
-              .slice(0, 8)
-              .map((product) => (
-                <Link
-                  href={product.url}
-                  key={product.id}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-lg hover:border-primary-400 transition-all group flex flex-col"
-                >
-                  <div className="relative h-52 bg-slate-50 overflow-hidden flex items-center justify-center p-4">
-                    <Image
-                      src={product.image}
-                      alt={product.title}
-                      fill
-                      className="object-contain group-hover:scale-105 transition-transform duration-500 p-2"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                      referrerPolicy="no-referrer"
-                    />
-                    <div className="absolute top-3 left-3 z-10">
-                      <span className="bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest">
-                        {product.category}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="p-5 flex flex-col flex-grow">
-                    <div className="flex flex-col gap-1.5 mb-3">
-                      <h3 className="font-bold text-base text-slate-900 leading-snug line-clamp-2">
-                        {product.title}
-                      </h3>
-                      <span className="font-extrabold text-primary-600 text-lg">
-                        {product.price}
-                      </span>
-                    </div>
-                    <p className="text-xs font-medium text-slate-500 mb-5 flex-grow leading-relaxed">
-                      {product.description}
-                    </p>
-                    <div className="w-full bg-slate-100 group-hover:bg-primary-600 text-slate-700 group-hover:text-white font-bold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center gap-2 uppercase tracking-wide text-xs">
-                      <ShoppingCart className="w-4 h-4" />
-                      View Product
-                    </div>
-                  </div>
-                </Link>
-              ))}
-          </div>
-        </div>
-      </section>
+      <FeaturedProducts
+        products={productsData
+          .filter((p) =>
+            [
+              'Retatrutide - 5mg',
+              'Retatrutide - 10mg',
+              'Tirzepatide (GLP-1/GIP) - 10mg',
+              'Semaglutide (GLP-1) - 5mg',
+              'Retatrutide - 30mg',
+              'Tirzepatide (GLP-1/GIP) - 15mg',
+              'Tesamorelin + Ipamorelin - 10MG (Blend)',
+              'MOTS-C 40mg',
+            ].includes(p.title)
+          )
+          .slice(0, 8)}
+      />
 
       {/* Why Choose Us */}
       <section className="py-24 bg-slate-50 border-t border-slate-200">

@@ -45,14 +45,14 @@ export interface OrderPayload {
  * Returns a configured Zoho Nodemailer transporter
  */
 export function getZohoTransporter() {
-  const host = process.env.ZOHO_HOST || 'smtppro.zoho.com';
+  const host = process.env.ZOHO_HOST || 'smtppro.zoho.eu';
   const port = parseInt(process.env.ZOHO_PORT || '465', 10);
   const user = process.env.ZOHO_EMAIL;
   const pass = process.env.ZOHO_PASSWORD;
 
   if (!user || !pass) {
     console.warn(
-      '[Zoho Mail Warning] ZOHO_EMAIL or ZOHO_PASSWORD is not set in environment variables. Email delivery will be simulated.'
+      '[Zoho Mail Warning] ZOHO_EMAIL or ZOHO_PASSWORD is not set in environment variables. Email delivery is operating in mock mode.'
     );
     return null;
   }
@@ -60,14 +60,17 @@ export function getZohoTransporter() {
   return nodemailer.createTransport({
     host,
     port,
-    secure: port === 465, // true for 465, false for 587
+    secure: port === 465, // true for 465 (SSL), false for 587 (STARTTLS)
     auth: {
-      user,
-      pass,
+      user: user.trim(),
+      pass: pass.trim(),
     },
     tls: {
       rejectUnauthorized: false,
     },
+    connectionTimeout: 10000,
+    greetingTimeout: 10000,
+    socketTimeout: 15000,
   });
 }
 
@@ -358,6 +361,7 @@ export async function sendOrderEmails(order: OrderPayload): Promise<{
   customerSent: boolean;
   adminSent: boolean;
   message: string;
+  errors?: string[];
 }> {
   const transporter = getZohoTransporter();
 
@@ -367,7 +371,7 @@ export async function sendOrderEmails(order: OrderPayload): Promise<{
       success: true,
       customerSent: false,
       adminSent: false,
-      message: 'Zoho credentials not set; order registered successfully in mock mode.',
+      message: 'ZOHO_EMAIL and ZOHO_PASSWORD environment variables are not configured. Emails were logged in server mock mode.',
     };
   }
 
@@ -376,6 +380,7 @@ export async function sendOrderEmails(order: OrderPayload): Promise<{
 
   let customerSent = false;
   let adminSent = false;
+  const errors: string[] = [];
 
   try {
     // 1. Send Customer Confirmation Email
@@ -388,9 +393,11 @@ export async function sendOrderEmails(order: OrderPayload): Promise<{
 
     await transporter.sendMail(customerMailOptions);
     customerSent = true;
-    console.log(`[Zoho Mail] Customer confirmation email sent to ${order.customer.email}`);
-  } catch (customerError) {
-    console.error('[Zoho Mail Error] Failed to send customer email:', customerError);
+    console.log(`[Zoho Mail] Customer confirmation email successfully sent to ${order.customer.email}`);
+  } catch (customerError: any) {
+    const errorMsg = customerError?.message || String(customerError);
+    console.error('[Zoho Mail Error] Failed to send customer email:', errorMsg);
+    errors.push(`Customer email error: ${errorMsg}`);
   }
 
   try {
@@ -404,17 +411,22 @@ export async function sendOrderEmails(order: OrderPayload): Promise<{
 
     await transporter.sendMail(adminMailOptions);
     adminSent = true;
-    console.log(`[Zoho Mail] Admin notification email sent to ${adminEmail}`);
-  } catch (adminError) {
-    console.error('[Zoho Mail Error] Failed to send admin email:', adminError);
+    console.log(`[Zoho Mail] Admin notification email successfully sent to ${adminEmail}`);
+  } catch (adminError: any) {
+    const errorMsg = adminError?.message || String(adminError);
+    console.error('[Zoho Mail Error] Failed to send admin email:', errorMsg);
+    errors.push(`Admin email error: ${errorMsg}`);
   }
 
   return {
-    success: customerSent || adminSent,
+    success: customerSent && adminSent,
     customerSent,
     adminSent,
     message: customerSent && adminSent
-      ? 'Order emails dispatched to both customer and administrator via Zoho Mail.'
+      ? 'Order confirmation dispatched via Zoho Mail to customer and admin.'
+      : errors.length > 0
+      ? `Zoho Mail delivery encountered issues: ${errors.join('; ')}`
       : 'Order processed; partial email dispatch recorded.',
+    errors: errors.length > 0 ? errors : undefined,
   };
 }
