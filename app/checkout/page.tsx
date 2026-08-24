@@ -59,6 +59,7 @@ export default function CheckoutPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [orderComplete, setOrderComplete] = useState<any | null>(null);
+  const [emailStatus, setEmailStatus] = useState<any | null>(null);
 
   const shippingFee = selectedShipping.fee;
   const grandTotal = subtotal + shippingFee;
@@ -122,6 +123,7 @@ export default function CheckoutPage() {
 
       // Order success
       setOrderComplete(data.order);
+      setEmailStatus(data.emailStatus || null);
       clearCart();
     } catch (err: any) {
       setErrorMessage(err.message || 'An unexpected error occurred. Please try again.');
@@ -147,10 +149,26 @@ export default function CheckoutPage() {
             <p className="text-sm text-slate-300">
               Order ID: <strong className="text-primary-400 font-mono text-base font-extrabold">{orderComplete.orderId}</strong>
             </p>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-500/10 border border-primary-500/30 text-primary-300 text-xs font-semibold">
-              <Mail className="w-3.5 h-3.5" />
-              Confirmation email sent to <strong>{orderComplete.customer.email}</strong> via Zoho Mail
-            </div>
+            
+            {emailStatus?.customerSent ? (
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-semibold">
+                <Mail className="w-3.5 h-3.5" />
+                Confirmation email sent to <strong>{orderComplete.customer.email}</strong> via Zoho Mail
+              </div>
+            ) : (
+              <div className="inline-flex flex-col sm:flex-row items-center gap-2 px-4 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold">
+                <div className="flex items-center gap-1.5">
+                  <Mail className="w-3.5 h-3.5 flex-shrink-0" />
+                  <span>{emailStatus?.message || 'Order registered successfully.'}</span>
+                </div>
+                <Link
+                  href="/email-diagnostics"
+                  className="underline text-primary-400 hover:text-primary-300 font-bold ml-1"
+                >
+                  Zoho SMTP Diagnostics →
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Payment Instructions Box */}

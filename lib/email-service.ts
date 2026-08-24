@@ -41,37 +41,73 @@ export interface OrderPayload {
   total: number;
 }
 
-/**
- * Returns a configured Zoho Nodemailer transporter
- */
-export function getZohoTransporter() {
-  const host = process.env.ZOHO_HOST || 'smtppro.zoho.eu';
-  const port = parseInt(process.env.ZOHO_PORT || '465', 10);
-  const user = process.env.ZOHO_EMAIL;
-  const pass = process.env.ZOHO_PASSWORD;
+export interface SmtpConfig {
+  host?: string;
+  port?: number;
+  user?: string;
+  pass?: string;
+}
 
-  if (!user || !pass) {
-    console.warn(
-      '[Zoho Mail Warning] ZOHO_EMAIL or ZOHO_PASSWORD is not set in environment variables. Email delivery is operating in mock mode.'
-    );
-    return null;
-  }
+/**
+ * Sanitizes credentials (strips accidental quotes, spaces, newlines)
+ */
+function cleanCredential(val: string | undefined): string | undefined {
+  if (!val) return undefined;
+  return val.trim().replace(/^["']|["']$/g, '');
+}
+
+/**
+ * List of known Zoho SMTP host configurations for auto-detection and fallback
+ */
+export const ZOHO_CONFIGS = [
+  { host: 'smtppro.zoho.eu', port: 465, secure: true, label: 'Zoho Workplace EU (SSL 465)' },
+  { host: 'smtppro.zoho.eu', port: 587, secure: false, label: 'Zoho Workplace EU (STARTTLS 587)' },
+  { host: 'smtppro.zoho.com', port: 465, secure: true, label: 'Zoho Workplace Global (SSL 465)' },
+  { host: 'smtppro.zoho.com', port: 587, secure: false, label: 'Zoho Workplace Global (STARTTLS 587)' },
+  { host: 'smtp.zoho.eu', port: 465, secure: true, label: 'Zoho Personal EU (SSL 465)' },
+  { host: 'smtp.zoho.eu', port: 587, secure: false, label: 'Zoho Personal EU (STARTTLS 587)' },
+  { host: 'smtp.zoho.com', port: 465, secure: true, label: 'Zoho Personal Global (SSL 465)' },
+  { host: 'smtp.zoho.com', port: 587, secure: false, label: 'Zoho Personal Global (STARTTLS 587)' },
+];
+
+/**
+ * Creates a Nodemailer transporter for Zoho with resilient timeout & TLS configurations
+ */
+export function createTransporter(host: string, port: number, user: string, pass: string) {
+  const isSecure = port === 465;
 
   return nodemailer.createTransport({
-    host,
+    host: host.trim(),
     port,
-    secure: port === 465, // true for 465 (SSL), false for 587 (STARTTLS)
+    secure: isSecure,
     auth: {
       user: user.trim(),
       pass: pass.trim(),
     },
     tls: {
       rejectUnauthorized: false,
+      ciphers: 'SSLv3',
     },
-    connectionTimeout: 10000,
+    connectionTimeout: 12000,
     greetingTimeout: 10000,
     socketTimeout: 15000,
   });
+}
+
+/**
+ * Returns a configured Zoho Nodemailer transporter from env or custom config
+ */
+export function getZohoTransporter(customConfig?: SmtpConfig) {
+  const user = cleanCredential(customConfig?.user || process.env.ZOHO_EMAIL);
+  const pass = cleanCredential(customConfig?.pass || process.env.ZOHO_PASSWORD);
+  const host = cleanCredential(customConfig?.host || process.env.ZOHO_HOST) || 'smtppro.zoho.eu';
+  const port = parseInt(cleanCredential(String(customConfig?.port || process.env.ZOHO_PORT || '465')) || '465', 10);
+
+  if (!user || !pass) {
+    return null;
+  }
+
+  return createTransporter(host, port, user, pass);
 }
 
 /**
@@ -354,6 +390,28 @@ export function generateAdminEmailHtml(order: OrderPayload): string {
 }
 
 /**
+ * Translates low-level SMTP errors into clear human-actionable instructions
+ */
+export function interpretSmtpError(error: any): string {
+  const msg = (error?.message || String(error)).toLowerCase();
+  const code = error?.responseCode || error?.code || '';
+
+  if (msg.includes('535') || msg.includes('authentication failed') || msg.includes('invalid credentials') || code === 535) {
+    return 'Zoho Authentication Failed: Zoho requires an "Application-Specific Password" (App Password) instead of your regular Zoho account password. Visit https://accounts.zoho.eu/home#security/app_password (or accounts.zoho.com) to generate an App Password.';
+  }
+  if (msg.includes('553') || msg.includes('relaying disallowed') || msg.includes('sender address') || code === 553) {
+    return 'Zoho Relaying Disallowed: The "From" email address must match the exact authenticated Zoho mailbox user or an authorized alias in your Zoho Mail control panel.';
+  }
+  if (msg.includes('etimedout') || msg.includes('timeout') || msg.includes('greeting timeout')) {
+    return 'Connection Timeout: The connection to Zoho SMTP timed out. If using Port 465 (SSL), try Port 587 (STARTTLS) or check whether your account region is EU (smtppro.zoho.eu) or Global (smtppro.zoho.com).';
+  }
+  if (msg.includes('econnrefused')) {
+    return 'Connection Refused: The SMTP host refused the connection on this port. Verify your ZOHO_HOST and ZOHO_PORT settings.';
+  }
+  return error?.message || 'Unknown SMTP error occurred.';
+}
+
+/**
  * Sends both Customer confirmation and Admin alert emails via Zoho Mail
  */
 export async function sendOrderEmails(order: OrderPayload): Promise<{
@@ -363,30 +421,43 @@ export async function sendOrderEmails(order: OrderPayload): Promise<{
   message: string;
   errors?: string[];
 }> {
-  const transporter = getZohoTransporter();
+  const user = cleanCredential(process.env.ZOHO_EMAIL);
+  const pass = cleanCredential(process.env.ZOHO_PASSWORD);
 
-  if (!transporter) {
+  if (!user || !pass) {
     console.log('[Zoho Email Mock] Simulating Zoho email dispatch for order:', order.orderId);
     return {
       success: true,
       customerSent: false,
       adminSent: false,
-      message: 'ZOHO_EMAIL and ZOHO_PASSWORD environment variables are not configured. Emails were logged in server mock mode.',
+      message: 'ZOHO_EMAIL or ZOHO_PASSWORD environment variables are not detected. The order is recorded in simulation mode.',
     };
   }
 
-  const senderEmail = process.env.ZOHO_EMAIL || 'orders@retaclub.co.uk';
-  const adminEmail = process.env.ADMIN_EMAIL || process.env.ZOHO_EMAIL || 'admin@retaclub.co.uk';
+  const transporter = getZohoTransporter();
+  if (!transporter) {
+    return {
+      success: false,
+      customerSent: false,
+      adminSent: false,
+      message: 'Failed to initialize Zoho Mail transporter.',
+    };
+  }
+
+  // Sender email MUST match the authenticated user so Zoho relaying policy does not reject the mail
+  const senderEmail = user;
+  const adminEmail = cleanCredential(process.env.ADMIN_EMAIL) || user;
 
   let customerSent = false;
   let adminSent = false;
   const errors: string[] = [];
 
+  // 1. Send Customer Confirmation Email
   try {
-    // 1. Send Customer Confirmation Email
     const customerMailOptions = {
       from: `"Retatrutide Club UK" <${senderEmail}>`,
       to: order.customer.email,
+      replyTo: senderEmail,
       subject: `Order Confirmation #${order.orderId} - Retatrutide Club UK`,
       html: generateCustomerEmailHtml(order),
     };
@@ -395,16 +466,17 @@ export async function sendOrderEmails(order: OrderPayload): Promise<{
     customerSent = true;
     console.log(`[Zoho Mail] Customer confirmation email successfully sent to ${order.customer.email}`);
   } catch (customerError: any) {
-    const errorMsg = customerError?.message || String(customerError);
-    console.error('[Zoho Mail Error] Failed to send customer email:', errorMsg);
-    errors.push(`Customer email error: ${errorMsg}`);
+    const detailed = interpretSmtpError(customerError);
+    console.error('[Zoho Mail Error] Failed to send customer email:', customerError?.message);
+    errors.push(`Customer email (${order.customer.email}): ${detailed}`);
   }
 
+  // 2. Send Admin Notification Email
   try {
-    // 2. Send Admin Notification Email
     const adminMailOptions = {
       from: `"Retatrutide Orders" <${senderEmail}>`,
       to: adminEmail,
+      replyTo: order.customer.email,
       subject: `🚨 New Order #${order.orderId} (£${order.total.toFixed(2)}) - ${order.customer.firstName} ${order.customer.lastName}`,
       html: generateAdminEmailHtml(order),
     };
@@ -413,20 +485,24 @@ export async function sendOrderEmails(order: OrderPayload): Promise<{
     adminSent = true;
     console.log(`[Zoho Mail] Admin notification email successfully sent to ${adminEmail}`);
   } catch (adminError: any) {
-    const errorMsg = adminError?.message || String(adminError);
-    console.error('[Zoho Mail Error] Failed to send admin email:', errorMsg);
-    errors.push(`Admin email error: ${errorMsg}`);
+    const detailed = interpretSmtpError(adminError);
+    console.error('[Zoho Mail Error] Failed to send admin email:', adminError?.message);
+    errors.push(`Admin email (${adminEmail}): ${detailed}`);
   }
 
+  const isSuccess = customerSent || adminSent;
+
   return {
-    success: customerSent && adminSent,
+    success: isSuccess,
     customerSent,
     adminSent,
-    message: customerSent && adminSent
-      ? 'Order confirmation dispatched via Zoho Mail to customer and admin.'
+    message: isSuccess
+      ? customerSent && adminSent
+        ? 'Order confirmation email dispatched via Zoho Mail to both customer and admin.'
+        : 'Order processed; partial email dispatch recorded.'
       : errors.length > 0
-      ? `Zoho Mail delivery encountered issues: ${errors.join('; ')}`
-      : 'Order processed; partial email dispatch recorded.',
+      ? `Zoho Mail delivery failed: ${errors[0]}`
+      : 'Order processed without email dispatch.',
     errors: errors.length > 0 ? errors : undefined,
   };
 }

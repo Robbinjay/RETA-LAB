@@ -116,9 +116,15 @@ export function Footer() {
           <p>
             &copy; {currentYear} Retatrutide Club. All rights reserved.
           </p>
-          <p>
-            Committed to independent, evidence-based research reporting.
-          </p>
+          <div className="flex items-center gap-4">
+            <Link href="/email-diagnostics" className="hover:text-slate-400 transition-colors">
+              Zoho SMTP Status
+            </Link>
+            <span>•</span>
+            <p>
+              Committed to independent, evidence-based research reporting.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
