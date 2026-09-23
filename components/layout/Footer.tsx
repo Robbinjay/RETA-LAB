@@ -25,6 +25,7 @@ const FOOTER_COLUMNS = [
       { href: '/sources', label: 'Scientific Sources' },
       { href: '/editorial-policy', label: 'Editorial Standards' },
       { href: '/about', label: 'About Retatrutide Club' },
+      { href: 'https://wa.me/447888391589', label: 'WhatsApp Support' },
       { href: '/contact', label: 'Contact Support' },
     ],
   },

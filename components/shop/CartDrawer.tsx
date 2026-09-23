@@ -10,6 +10,7 @@ import {
   Plus,
   Minus,
   ShoppingCart,
+  MessageCircle,
   ArrowRight,
   ShieldCheck,
   AlertCircle,
@@ -218,6 +219,16 @@ export function CartDrawer() {
                 >
                   Proceed to Checkout <ArrowRight className="w-4 h-4" />
                 </Link>
+
+                <button
+                  onClick={() => {
+                    const message = `Hello! I would like to place an order for:\n${items.map(i => `- ${i.title} (Qty: ${i.quantity})`).join('\n')}\n\nTotal: £${subtotal.toFixed(2)} GBP`;
+                    window.open(`https://wa.me/447888391589?text=${encodeURIComponent(message)}`, '_blank');
+                  }}
+                  className="w-full py-3 px-4 rounded-xl border border-emerald-500 text-emerald-600 hover:bg-emerald-50 bg-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-sm"
+                >
+                  <MessageCircle className="w-4 h-4" /> Order via WhatsApp
+                </button>
 
                 <button
                   onClick={closeCart}

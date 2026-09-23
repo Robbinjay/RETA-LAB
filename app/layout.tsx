@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Providers } from '@/components/layout/Providers';
+import { WhatsappButton } from '@/components/shop/WhatsappButton';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
+          <WhatsappButton phoneNumber="+447888391589" />
         </Providers>
       </body>
     </html>

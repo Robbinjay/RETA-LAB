@@ -60,6 +60,15 @@ export function Header() {
         </button>
 
         <div className="hidden sm:flex items-center space-x-3">
+          <a
+            href="https://wa.me/447888391589"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-semibold text-emerald-600 hover:text-emerald-500 px-2.5 py-2 transition-colors flex items-center gap-1"
+          >
+            <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
+            WhatsApp
+          </a>
           <Link
             href="/contact"
             className="text-sm font-semibold text-slate-700 hover:text-primary-600 px-2.5 py-2 transition-colors"

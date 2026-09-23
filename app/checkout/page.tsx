@@ -25,6 +25,7 @@ import {
   ShoppingBag,
   Info,
   Loader2,
+  MessageCircle,
 } from 'lucide-react';
 
 export default function CheckoutPage() {
@@ -873,6 +874,17 @@ export default function CheckoutPage() {
                   ) : (
                     `Place Research Order • £${grandTotal.toFixed(2)} GBP`
                   )}
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    const message = `Hello! I would like to place an order via WhatsApp.\n\nItems:\n${items.map(i => `- ${i.title} (Qty: ${i.quantity})`).join('\n')}\n\nShipping: ${selectedShipping.name}\nTotal: £${grandTotal.toFixed(2)} GBP\n\nMy Details:\nName: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nAddress: ${formData.addressLine1}, ${formData.city}, ${formData.postcode}`;
+                    window.open(`https://wa.me/447888391589?text=${encodeURIComponent(message)}`, '_blank');
+                  }}
+                  className="w-full py-3.5 px-6 rounded-xl border-2 border-emerald-500 text-emerald-600 hover:bg-emerald-50 bg-white font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all"
+                >
+                  <MessageCircle className="w-4 h-4" /> Fast Order via WhatsApp
                 </button>
 
                 {/* Reassurance Badges */}
