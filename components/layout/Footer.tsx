@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Instagram, Facebook, Music } from 'lucide-react';
 
 const FOOTER_COLUMNS = [
   {
@@ -63,6 +64,35 @@ export function Footer() {
             <p className="text-sm text-slate-400 leading-relaxed">
               Independent, evidence-based portal providing peer-reviewed clinical research and education on next-generation peptide science.
             </p>
+            <div className="flex items-center gap-4 pt-2">
+              <a 
+                href="https://www.instagram.com/maxkaylapeps?stkn=MXZvaGh2c2Y4YWRyaw==" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-700 transition-all"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a 
+                href="https://www.tiktok.com/@ukretaclub?_r=1&_t=ZN-99xybBrQOow" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-700 transition-all"
+                aria-label="TikTok"
+              >
+                <Music className="w-4 h-4" />
+              </a>
+              <a 
+                href="https://www.facebook.com/share/14p4tF5VRSe/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-700 transition-all"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-4 h-4" />
+              </a>
+            </div>
           </div>
           <div className="flex items-center gap-3">
             <Link
