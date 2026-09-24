@@ -3,8 +3,16 @@ import Link from 'next/link';
 import { ArrowRight, AlertCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Retatrutide Dosage & Dosing Protocols | Retatrutide Club',
-  description: 'Educational guide on retatrutide dosage, clinical trial dosing protocols, and dose escalation schedules.',
+  title: 'Retatrutide Dosage Guide & UK Dosing Protocols | Retatrutide Club',
+  description: 'Comprehensive educational guide on retatrutide dosage, clinical trial dosing protocols, and dose escalation schedules. Essential for retatrutide UK research.',
+  keywords: [
+    'retatrutide dosage',
+    'retatrutide dosing protocol',
+    'retatrutide 2mg',
+    'retatrutide uk dosage',
+    'buy retatrutide uk',
+    'retatrutide research peptides',
+  ],
   alternates: {
     canonical: 'https://retaclub.co.uk/retatrutide-dosage',
   }

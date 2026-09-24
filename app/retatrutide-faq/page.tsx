@@ -2,8 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Retatrutide FAQ | Retatrutide Club',
-  description: 'Frequently asked questions regarding retatrutide research, clinical trials, and pharmacology.',
+  title: 'Retatrutide FAQ | Research & UK Availability Questions',
+  description: 'Frequently asked questions regarding retatrutide research, UK availability, clinical trials, and pharmacology. Get expert answers on triple-agonist science.',
+  keywords: [
+    'retatrutide faq',
+    'retatrutide uk questions',
+    'is retatrutide legal uk',
+    'retatrutide weight loss faq',
+    'retatrutide 12mg results',
+  ],
   alternates: {
     canonical: 'https://retaclub.co.uk/retatrutide-faq',
   }

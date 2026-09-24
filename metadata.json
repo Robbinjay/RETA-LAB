@@ -1,6 +1,6 @@
 {
-  "name": "Remix Retatrutide Club",
-  "description": "Retatrutide research and educational information.",
+  "name": "Retatrutide Club UK",
+  "description": "Evidence-based portal and research guide for Retatrutide in the UK. Independent clinical trial data, mechanisms of action, and high-purity research peptide information.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

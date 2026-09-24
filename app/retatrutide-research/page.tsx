@@ -2,8 +2,16 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Retatrutide Research | Retatrutide Club',
-  description: 'Deep dive into the latest research, studies, and mechanisms of action surrounding the triple-agonist Retatrutide.',
+  title: 'Retatrutide Research & Mechanism of Action | Retatrutide Club UK',
+  description: 'Deep dive into the latest scientific research, clinical studies, and triple-agonist mechanisms of action for Retatrutide UK. Independent research portal.',
+  keywords: [
+    'retatrutide research',
+    'retatrutide studies',
+    'retatrutide mechanism',
+    'retatrutide UK research',
+    'buy retatrutide UK',
+    'triple agonist peptides',
+  ],
   alternates: {
     canonical: 'https://retaclub.co.uk/retatrutide-research',
   }

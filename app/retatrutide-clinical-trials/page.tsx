@@ -2,8 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Retatrutide Clinical Trials | Retatrutide Club',
-  description: 'Detailed overview of Phase 2 and Phase 3 (TRIUMPH) clinical trials for Retatrutide.',
+  title: 'Retatrutide Clinical Trials & TRIUMPH Program Data | Retatrutide Club',
+  description: 'Detailed overview of Phase 2 and Phase 3 (TRIUMPH) clinical trials for Retatrutide. Review weight loss efficacy and safety data from independent clinical trials.',
+  keywords: [
+    'retatrutide clinical trials',
+    'retatrutide phase 3',
+    'TRIUMPH clinical trial',
+    'retatrutide weight loss data',
+    'retatrutide phase 2 results',
+  ],
   alternates: {
     canonical: 'https://retaclub.co.uk/retatrutide-clinical-trials',
   }

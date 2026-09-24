@@ -2,8 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Retatrutide Safety Information | Retatrutide Club',
-  description: 'Educational safety information regarding Retatrutide, including known side effects and tolerability based on clinical data.',
+  title: 'Retatrutide Safety Profile & Side Effects Guide | Retatrutide Club',
+  description: 'Detailed educational safety information on Retatrutide. Explore clinical side effects, cardiovascular impact, and tolerability data for UK retatrutide research.',
+  keywords: [
+    'retatrutide safety',
+    'retatrutide side effects',
+    'retatrutide nausea',
+    'retatrutide UK safety',
+    'buy retatrutide peptides',
+  ],
   alternates: {
     canonical: 'https://retaclub.co.uk/retatrutide-safety',
   }

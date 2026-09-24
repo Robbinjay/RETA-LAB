@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/retatrutide-pen',
     '/retatrutide-dosage',
     '/retatrutide-dosing',
+    '/shop',
     '/research',
     '/blog',
     '/faq',
